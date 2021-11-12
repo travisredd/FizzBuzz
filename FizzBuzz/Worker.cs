@@ -31,7 +31,9 @@ namespace FizzBuzz
             }
             catch (Exception e)
             {
-                throw new Exception("Not the correct input. Try again.\n" + e);
+                Console.WriteLine("Not the correct input. Try again.\n");
+                throw new Exception("Error: \n" + e);
+
             }
             return userInput;
         }
@@ -52,7 +54,8 @@ namespace FizzBuzz
             }
             catch (Exception e)
             {
-                throw new Exception("Not the correct input. Try again.\n" + e);
+                Console.WriteLine("Not the correct input. Try again.\n" + e);
+                throw new Exception("Error: \n" + e);
             }            
             return userInput;
         }
@@ -73,7 +76,8 @@ namespace FizzBuzz
             }
             catch (Exception e)
             {
-                throw new Exception("Not the correct input. Try again.\n" + e);
+                Console.WriteLine("Not the correct input. Try again.\n" + e);
+                throw new Exception("Error: \n" + e);
             }
             return userInput;
         }
