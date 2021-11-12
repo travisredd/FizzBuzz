@@ -22,7 +22,7 @@ namespace FizzBuzz
                 userInput = work.addSecondDivisorAndReplacement(userInput, 5, "Buzz");
                 // * Returns list of strings that print our range of number with the chosen text to replace their respective divisors.
                 lstReturn = work.getListOfNumbersAndReplacementText(userInput);
-            } catch (Exception e)
+            } catch (Exception)
             {
                 string errorMessage = "";
                 errorMessage += "UpperBound number should be between 1 and 10000 for the second parameter\n";
