@@ -79,7 +79,7 @@ namespace FizzBuzz
                 Console.WriteLine("Not the correct input. Try again.\n" + e);
                 throw new Exception("Error: \n" + e);
             }
-            return userInput;
+            return userInput; 
         }
     }
 }
