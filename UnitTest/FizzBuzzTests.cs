@@ -1,5 +1,4 @@
 ﻿using System;
-using System.IO;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using FizzBuzz;
 using System.Collections.Generic;
@@ -21,10 +20,8 @@ namespace UnitTest
             worker.addSecondDivisorAndReplacement(userInput, 5, "Bar");
             var Result = worker.getListOfNumbersAndReplacementText(userInput);
             // Assert
-            Assert.IsTrue((Result.IndexOf("FooBar") + 1) % 15 == 0);
+            Assert.IsTrue((Result.IndexOf("Foo") + 1) % 3 == 0 && (Result.IndexOf("Bar") + 1) % 5 == 0);
         }
-
-
 
         [TestMethod]
         [ExpectedException(typeof(System.FormatException))]
@@ -70,9 +67,6 @@ namespace UnitTest
             // Assert
             Assert.IsTrue((int)userInput["intMax"] == 10000);
         }
-
-
-
 
         [TestMethod]
         [ExpectedException(typeof(System.FormatException))]
@@ -131,9 +125,6 @@ namespace UnitTest
             // Assert
             Assert.IsTrue((int)userInput["firstDivisor"] == 3 && (string)userInput["firstDivisorReplacement"] == "Foo");
         }
-
-
-
 
         [TestMethod]
         [ExpectedException(typeof(System.FormatException))]

@@ -12,12 +12,11 @@ namespace FizzBuzz
             Worker work = new Worker();
             string strReturn = "";
 
-            // * Adds the upper bound int and returns list with upperbound.
+            // * Adds the upper bound int to the userInput object.
             userInput = work.addUpperBound(userInput, 100);
-
-            // * Adds the first number we get to check for divisors out of the range of ints and replaces all divisors of that number with a word.
+            // * Adds the first divisor and string that we replace the first divisor with to the userInput object.
             userInput = work.addFirstDivisorAndReplacement(userInput, 3, "Fizz");
-            // * Adds the second number we get to check for divisors out of the range of ints and replaces all divisors of that number with a word.
+            // * Adds the second divisor and string that we replace the second divisor with to the userInput object.
             userInput = work.addSecondDivisorAndReplacement(userInput, 5, "Buzz");
             // * Returns list of strings that print our range of number with the chosen text to replace their respective divisors.
             lstReturn = work.getListOfNumbersAndReplacementText(userInput);

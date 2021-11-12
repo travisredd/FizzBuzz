@@ -36,14 +36,14 @@ namespace FizzBuzz
             return userInput;
         }
 
-        public Dictionary<string, object> addFirstDivisorAndReplacement(Dictionary<string, object> userInput, int fDivisor, string fReplacement)
+        public Dictionary<string, object> addFirstDivisorAndReplacement(Dictionary<string, object> userInput, int intFirstDivisor, string strFirstReplacement)
         {
             try
             {
-                if (fDivisor > 0 && fDivisor <= (int)userInput["intMax"])
+                if (intFirstDivisor > 0 && intFirstDivisor <= (int)userInput["intMax"])
                 {
-                    userInput.Add("firstDivisor", fDivisor);
-                    userInput.Add("firstDivisorReplacement", fReplacement);
+                    userInput.Add("firstDivisor", intFirstDivisor);
+                    userInput.Add("firstDivisorReplacement", strFirstReplacement);
                 }
                 else
                 {
@@ -57,15 +57,14 @@ namespace FizzBuzz
             return userInput;
         }
 
-        public Dictionary<string, object> addSecondDivisorAndReplacement(Dictionary<string, object> userInput, int sDivisor, string sReplacement)
+        public Dictionary<string, object> addSecondDivisorAndReplacement(Dictionary<string, object> userInput, int intSecondDivisor, string strSecondReplacement)
         {
             try
             {
-
-                if (sDivisor > 0 && sDivisor <= (int)userInput["intMax"])
+                if (intSecondDivisor > 0 && intSecondDivisor <= (int)userInput["intMax"])
                 {
-                    userInput.Add("secondDivisor", sDivisor);
-                    userInput.Add("secondDivisorReplacement", sReplacement);
+                    userInput.Add("secondDivisor", intSecondDivisor);
+                    userInput.Add("secondDivisorReplacement", strSecondReplacement);
                 }
                 else
                 {
